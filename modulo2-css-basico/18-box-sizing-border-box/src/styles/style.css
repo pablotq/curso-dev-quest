@@ -1,0 +1,20 @@
+div {
+    width: 100px;
+    height: 100px;
+
+    padding: 10px;
+    border: 10px solid green;
+}
+
+.com-border-box {
+    background-color: aquamarine;
+    box-sizing: border-box;
+    
+    /* lagura: 10 +10 + 60 + 10 + 10 = 100 */
+}
+
+.sem-border-box {
+    background-color: brown;
+
+    /* lagura: 10 +10 + 100 + 10 + 10 = 140 */
+}

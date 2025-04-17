@@ -1,0 +1,12 @@
+.texto {
+    margin: 40px;
+    padding: 20px;
+}
+
+.p-padrao {
+    background-color: #f5f5f5;
+}
+
+.p-destaque {
+    background-color: #f0cce2;
+}
