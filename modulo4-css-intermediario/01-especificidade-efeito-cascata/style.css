@@ -1,0 +1,20 @@
+.container-cascata {
+    background-color: aqua ; 
+}
+
+.container-cascata {
+    background-color: orange; 
+    /* essa cor será escpolhida pois o CSS vai implementando os estilos em ordem */
+}
+
+#meu-paragrafo {
+    background-color: violet;
+}
+
+p {
+background-color: lightblue;
+}
+
+.container-especificidade p {
+    background-color: chartreuse;
+}
