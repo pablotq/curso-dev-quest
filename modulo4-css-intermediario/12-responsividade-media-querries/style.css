@@ -39,3 +39,20 @@ main p {
 .image img {
     width: 100%;
 }
+
+/* dispositivos extra pequenos (celulares na em porta retrato, na vertical, menores do que 576px) */
+@media (max-width: 576px) {
+    .cabecalho {
+        text-align: center;
+    }
+
+    .cabecalho nav {
+        float: none;
+    }
+
+    .cabecalho nav li {
+        display: block;
+    }
+}
+
+
