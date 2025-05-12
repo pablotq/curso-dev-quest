@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aula sobre Picture">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Pablotq">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Aula sobre Picture</title>
+
+</head>
+<body>
+    <h1>Piture</h1>
+    <!-- mobile first -->
+    <!-- <picture>
+        <source media="(min-width: 768px)" srcset="https://placecats.com/neo_banana/850/850">
+        <source media="(min-width: 465px)" srcset="https://placecats.com/neo/500/500">
+        <img src="https://placecats.com/millie/300/300" alt="imagem de um gatinho">
+    </picture> -->
+
+    <!-- desktop first -->
+    <picture>
+        <source media="(max-width: 375px)" srcset="https://placecats.com/neo_banana/250/250">
+        <source media="(max-width: 425px)" srcset="https://placecats.com/neo/350/350">
+        <source media="(max-width: 768px)" srcset="https://placecats.com/bella/500/500">
+        
+        <img src="https://placecats.com/millie/1200/1200" alt="imagem de um gatinho">
+    </picture>
+    
+</body>
+</html>
