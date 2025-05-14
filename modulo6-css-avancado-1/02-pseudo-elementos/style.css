@@ -1,0 +1,29 @@
+.first-letter::first-letter {
+    color: coral;
+}
+
+
+.first-line::first-line {
+    color: coral;
+}
+
+.first-line::first-letter {
+    color: blue;
+}
+
+li::marker{
+    color: red;
+    font-size: 23px;
+}
+
+.antes::before{
+    content: url('images/21362697191661247270-20.png');
+}
+
+.depois::after{
+    content: "";
+    background: url(images/9373104291661247011-24.png) center center no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
