@@ -11,19 +11,19 @@ h1{
 .container{
     max-width: 500px;
     min-width: 250px;
-    height: 150px;
+    height: 170px;
 
     border: 2px solid #000;
     margin: 20px;
 }
 
 .container div{
-    background-color: rgb(221, 0, 92);
+    background-color: rgb(221, 206, 0);
 
 
     margin: 10px;
 
-    color: #FFF;
+    /* color: #FFF; */
     font-size: 20px;
     font-weight: bold;
 
