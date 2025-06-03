@@ -1,0 +1,11 @@
+@media(min-width: 768px) {
+    main{
+        min-height: 100vh;
+    }
+    .pinturas{
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+}
