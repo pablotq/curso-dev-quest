@@ -135,7 +135,7 @@ body{
 }
 
 .about .image.left{
-    background: url('../images/landscape.jpg') center center no-repeat;
+    background: url('../images/sky.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -196,8 +196,33 @@ body{
 
 .projects{
     grid-area: projects;
-    background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+
+.projects .project img{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.projects .project a:hover img{
+    opacity: 0.8;
+}
+
+@media(max-width: 768px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media(max-width: 456px){
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
 
 .footer{
     grid-area: footer;
