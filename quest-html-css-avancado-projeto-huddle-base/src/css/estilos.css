@@ -1,0 +1,83 @@
+body{
+    background:  hsl(257, 40%, 49%) url('../images/bg-desktop.svg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    margin-top: 50px;
+    margin-left: 60px;
+    
+}
+
+.container{
+    margin-top: 70px;
+    margin-left: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.container .banner img{
+        width: 100%;
+    }
+
+.container .service{
+    color: #FFF;
+    margin-top: 40px;
+    margin-left: 30px;
+    min-width: 500px;
+    max-width: 800px;
+}
+
+.container .service .title{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.container .service p{
+    margin-top: 27px;
+    margin-bottom: 40px;
+    font-size: 16.3px;
+    font-weight: 300;
+}
+
+.container .service .register{
+    color: hsl(257, 40%, 49%);
+    border-radius: 30px;
+    background-color: #FFF;
+    padding: 15px 65px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container .service .register:hover{
+    color: #FFF;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer{
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+    margin-right: 200px;
+    gap: 20px;
+}
+
+.footer a .fab{
+    width: 45px;
+    height: 45px;
+
+    font-size: 20px;
+    text-align: center;
+
+    color: white;
+
+    border-radius: 60%;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.footer a .fab:hover{
+    color: hsl(300, 69%, 71%);
+
+}
