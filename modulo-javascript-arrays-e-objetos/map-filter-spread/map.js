@@ -10,7 +10,6 @@ const numbers = [1, 2, 3, 4, 5];
 const dobroNums = numbers.map(number =>number * 2);
 
 
-console.log(numbers);
-console.log(dobroNums);
-
+// console.log(numbers);
+// console.log(dobroNums);
 
