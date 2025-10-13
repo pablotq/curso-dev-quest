@@ -4,7 +4,7 @@ let nome: string = "Pablo";
 let ligado: boolean = true;
 
 let verdade = false; //inferência de tipo
-verdade = "sim"; //erro
+// verdade = "sim"; //erro
 
 //declaração de array
 let idades: number[] = [30, 20, 12] ;
