@@ -1,10 +1,10 @@
 type TaskProps = {
-    description: string;
+    description?: string;
 };
 
-const NewTask = ({ description }: TaskProps) => {
+const NewTask = ({ description = "nenhuma tarefa cadastrada" }: TaskProps) => {
     return (
-            <li>{description}</li>
+            <p>- Tarefa: {description}</p>
     );
 }
 
