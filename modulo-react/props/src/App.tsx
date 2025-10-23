@@ -1,11 +1,15 @@
 import Tasks from './components/Tasks'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
 
   return (
     <>
-      <Tasks></Tasks>
+      <Card>
+        <Tasks></Tasks>
+      </Card>
+      <Card></Card>
     </>
   )
 }
