@@ -1,0 +1,10 @@
+.myButton{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.myButton:hover{
+    background-color: darkgreen;
+}
