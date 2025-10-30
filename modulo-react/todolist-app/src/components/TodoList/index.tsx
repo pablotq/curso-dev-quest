@@ -1,3 +1,7 @@
+import { useContext } from 'react';
+import { themeConfig } from '../../contexts/theme'
+import { themeContext } from '../../contexts/ThemeContext';
+
 const todos = [
   { id: 1, text: 'Todo 1' },
   { id: 2, text: 'Todo 2' },
@@ -5,28 +9,30 @@ const todos = [
 ];
 
 const TodoList = () => {
+    const {theme} = useContext(themeContext);
+
     return(
-        <div className='bg-dark-navy-900 rounded-md'>
+        <div className={`${themeConfig[theme].todo.backgroundColor} rounded-md`}>
               <ul>
                 {
                   todos.map((todo) => (
-                    <li className='p-6 border-b border-dark-purple-700' key={todo.id}>
+                    <li className={`p-6 border-b ${themeConfig[theme].todo.borderColor}`} key={todo.id}>
                       <div className='flex items-center gap-4'>
-                        <button className=' w-6 h-6 border border-dark-purple-700 rounded-full cursor-pointer'></button>
-                        <p className='text-light-purple-300'>{todo.text}</p>
+                        <button className={`w-6 h-6 border ${themeConfig[theme].todo.borderColor} rounded-full cursor-pointer`}></button>
+                        <p className={`${themeConfig[theme].todo.textColor}`}>{todo.text}</p>
                       </div>
                     </li>
                   ))
                 }
               </ul>
-              <div className='flex justify-between p-4 text-dark-purple-300'>
+              <div className={`flex justify-between p-4 ${themeConfig[theme].layout.textColor}`}>
                 <p>{todos.length} items total</p>
                 <div className='flex gap-4'>
-                  <button>All</button>
+                  <button className='text-bright-blue'>All</button>
                   <button>Active</button>
                   <button>Completed</button>
                 </div>
-                <button>Clear Selected</button>
+                <button>Clear Comlpeted</button>
               </div>
             </div>
     );
