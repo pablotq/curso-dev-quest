@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <main className={`${themeConfig[theme].layout.backgroundColor} h-screen`}>
-        <div className={`${themeConfig[theme].layout.mobile} md:${themeConfig[theme].layout.image} h-80 bg-cover bg-center `}>
+        <div className={`${themeConfig[theme].layout.imageBanner} h-80 bg-cover bg-center `}>
           <div className='max-w-175 m-auto p-8'>
             <TodoHeader></TodoHeader>
             <TodoForm />

@@ -7,8 +7,7 @@ export const themeConfig = {
         layout:{
             backgroundColor: 'bg-light-purple-300',
             textColor: 'text-light-gray-600',
-            image: "bg-[url('/images/bg-desktop-light.jpg')]",
-            mobile: "bg-[url('/images/bg-mobile-light.jpg')]",
+            imageBanner: 'theme-light',
         },
         todo:{
             backgroundColor:'bg-light-gray-50',
@@ -21,9 +20,8 @@ export const themeConfig = {
         name: 'Light',
         layout:{
             backgroundColor: 'bg-dark-navy-950',
-            textColor: 'text-dark-purple-300',
-            image: "bg-[url('/images/bg-desktop-dark.jpg')]",
-            mobile: "bg-[url('/images/bg-mobile-dark.jpg')]",
+            textColor: 'text-dark-purple-600',
+            imageBanner:'theme-dark',
         },
         todo:{
             backgroundColor:'bg-dark-navy-900',
