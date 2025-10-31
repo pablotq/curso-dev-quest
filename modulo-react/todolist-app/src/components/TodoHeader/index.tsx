@@ -1,10 +1,10 @@
 import { themeConfig } from '../../contexts/theme'
-import { themeContext } from '../../contexts/ThemeContext';
+import { ThemeContext } from '../../contexts/ThemeContext';
 import { useContext } from 'react';
 
 const TodoHeader = () => {
 
-  const {theme, toggleTheme} = useContext(themeContext);
+  const {theme, toggleTheme} = useContext(ThemeContext);
 
   return (
     <header className='flex justify-between mb-8 p-5'>

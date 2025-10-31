@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { themeConfig } from '../../contexts/theme'
-import { themeContext } from '../../contexts/ThemeContext';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 const TodoForm = () =>{
-    const {theme} = useContext(themeContext);
+    const {theme} = useContext(ThemeContext);
 
     return(
         <form className='relative mb-10'>

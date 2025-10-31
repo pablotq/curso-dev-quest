@@ -5,11 +5,11 @@ import TodoList from './components/TodoList';
 
 import { useContext } from 'react';
 import { themeConfig } from './contexts/theme'
-import { themeContext } from './contexts/ThemeContext';
+import { ThemeContext } from './contexts/ThemeContext';
 
 function App() {
   
-    const {theme} = useContext(themeContext);
+    const {theme} = useContext(ThemeContext);
 
   return (
     <>

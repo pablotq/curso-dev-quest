@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { themeConfig } from '../../contexts/theme'
-import { themeContext } from '../../contexts/ThemeContext';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 const todos = [
   { id: 1, text: 'Todo 1' },
@@ -9,7 +9,7 @@ const todos = [
 ];
 
 const TodoList = () => {
-  const { theme } = useContext(themeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <>
