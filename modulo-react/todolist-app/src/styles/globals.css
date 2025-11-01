@@ -11,7 +11,7 @@
 @theme {
   /* ---------- Core Colors ---------- */
   --color-bright-blue: hsl(220, 98%, 61%);
-  --color-check-bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --color-check-bg: linear-gradient(hsl(192,100%,67%),hsl(280,87%,65%));
 
   /* ---------- Light Theme ---------- */
   --color-light-gray-50: hsl(0, 0%, 98%);
