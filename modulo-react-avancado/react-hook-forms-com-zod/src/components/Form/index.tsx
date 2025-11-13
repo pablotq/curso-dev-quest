@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 
 const passwordSchema = z
   .string()
+  .nonempty('Campo obrigatório.')
   .min(6, { message: "A senha deve ter pelo menos 6 caracteres" })
   .refine((val) => /[A-Z]/.test(val), { error: "A senha deve conter letra maiúscula" })
   .refine((val) => /[a-z]/.test(val), { error: "A senha deve conter letra minúscula" })
@@ -14,9 +15,15 @@ const passwordSchema = z
 
 
 const registerUserForSchema = z.object({
-    email: z.email('Preencha o e-mail corretamente').min(1, 'Campo Obrigatório'),
+    email: z.email('Preencha o e-mail corretamente').nonempty('Campo obrigatório.'),
     password: passwordSchema,
-    confirmPassword: z.string().min(6, 'A senha precisa ter no mínimo 6 caracteres')
+    confirmPassword: z.string().nonempty('Informe a senha novamente.'),
+    telefone: z
+        .string()
+        .nonempty('Campo obrigatório.')
+        .regex(/^\d+$/, 'O telefone deve conter apenas números.')
+        .min(10, 'O telefone deve ter pelo menos 10 dígitos.')
+        .max(11, 'O telefone deve ter no máximo 11 dígitos.')
 })
    .refine((data) => data.password === data.confirmPassword, {
         message: "As senhas devem ser iguais",
@@ -52,6 +59,10 @@ export const Form = () => {
             <label htmlFor="email">E-mail</label>
             <input type="email" id="email" placeholder="Informe seu e-mail" {...register("email")} />
             {errors?.email && <p>{errors?.email.message}</p>}
+
+            <label htmlFor="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder=" (DDD + número)" {...register("telefone")} />
+            {errors?.telefone && <p>{errors?.telefone.message}</p>}
 
             <label htmlFor="password">Senha</label>
             <input type="password" id="password" placeholder="Informe sua senha" {...register("password")} />
